@@ -221,7 +221,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
       }
 
       onDragEnd?.({ from, to, data: newData });
-      reset();
+      setTimeout(reset());
     }
   );
 
